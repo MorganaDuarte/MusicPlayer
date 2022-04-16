@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlays</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <img id="img" class="photo" src="" alt="">
+        <h4 id="title"></h4>
+        <audio id="audio" src=""></audio>
+        <div class="controls">
+            <span id="currentTime" class="time">0:00</span>
+            <input type="range" id="seekSlider" class="slider"
+             max="100" value="0">
+            <img id="start" onclick="playMusic()" src="./images/playButton.png" alt="playButton">
+            <img id="pause" class="hidden" onclick="pauseMusic()" src="./images/pauseButton.png" alt="pauseButton">
+            <img id="stop" onclick="stopMusic()" src="./images/stopButton.png" alt="stopButton">
+            <img onclick="back()" src="./images/rewind.png" alt="rewind">
+            <img onclick="next()" src="./images/foward.png" alt="foward">
+
+
+        </div>
+    </div>
+
+
+
+    <script src="musicList.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
